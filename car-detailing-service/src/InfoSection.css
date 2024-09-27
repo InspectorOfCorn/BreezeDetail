@@ -1,13 +1,23 @@
 /* src/components/InfoSection.css */
+
 .info-section {
     padding: 40px 20px;
-    background-color: #f8f8f8;
+    background-color: #073255;
 }
 
 .info-section h2 {
+    display: flex;
     text-align: center;
-    margin-bottom: 30px;
-    color: #333;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);;
+    background-color: #0d64aa;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 .info-grid {
@@ -17,19 +27,36 @@
 }
 
 .info-item {
-    background-color: #fff;
+    background-color: #0d64aa;
+    height: auto;
+    width: auto;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    outline-color: black;
+    outline-style: solid;
+    outline-width: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .info-item h3 {
-    color: #4CAF50;
+    color: black;
+    background-color: #ffffff;
+    margin-right: 5px;
+    margin-left: 5px;
     margin-bottom: 10px;
+    margin-top: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    text-indent: 25px;
+    outline-style: solid;
+    outline-color: black;
 }
 
 .info-item p {
-    color: #666;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 @media (max-width: 768px) {

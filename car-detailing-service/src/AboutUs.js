@@ -1,8 +1,21 @@
 // src/components/AboutUs.js
 import React from 'react';
 import './AboutUs.css';
+import VanTrunk_Before from './images/VanTrunk_Before.jpg';
+import VanTrunk_After from './images/VanTrunk_After.jpg';
+import VanMiddleSeat_Before from './images/VanMiddleSeat_Before.jpg';
+import VanMiddleSeat_After from './images/VanMiddleSeat_After.jpg';
+import VanBackSeat_Before from './images/VanBackSeat_Before.jpg';
+import VanBackSeat_After from './images/VanBackSeat_After.jpg';
+import VanFrontSeat_Before from './images/VanFrontSeat_Before.jpg';
+import VanFrontSeat_After from './images/VanFrontSeat_After.jpg';
+
+
+
+
 
 const AboutUs = () => {
+
     return (
         <section className="about-us">
             <h2>About Our Car Interior Detailing Service</h2>
@@ -19,14 +32,18 @@ const AboutUs = () => {
                         products to ensure your vehicle receives the best care possible.
                     </p>
                     <p>
-                        At [Your Company Name], we believe that a clean car interior not only looks great but
+                        At Breeze Mobile Detailing, we believe that a clean car interior not only looks great but
                         also contributes to a more enjoyable and healthier driving experience. That's why we go
                         above and beyond to exceed our customers' expectations with every detailing job.
                     </p>
                 </div>
-                <div className="about-image">
-                    {/* Replace with your actual image */}
-                    <img src="/path-to-your-image.jpg" alt="Our detailing team at work" />
+                <div>
+                <img className='about-image' src={VanFrontSeat_Before} alt='' onMouseOver = {e => (e.currentTarget.src = VanFrontSeat_After)} onMouseOut={e => (e.currentTarget.src = VanFrontSeat_Before)} />
+                <img className= 'about-image' src={VanBackSeat_Before} alt = '' onMouseOver = {e => (e.currentTarget.src = VanBackSeat_After)} onMouseOut={e => (e.currentTarget.src = VanBackSeat_Before)} />
+                </div>
+                <div>
+                <img className= 'about-image' src={VanMiddleSeat_Before} alt= '' onMouseOver= {e => (e.currentTarget.src = VanMiddleSeat_After)} onMouseOut={e=> (e.currentTarget.src = VanMiddleSeat_Before)}/>
+                <img className='about-image' src={VanTrunk_Before} alt='' onMouseOver = {e => (e.currentTarget.src = VanTrunk_After)} onMouseOut={e => (e.currentTarget.src = VanTrunk_Before)}/>
                 </div>
             </div>
         </section>

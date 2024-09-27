@@ -2,12 +2,35 @@
 .App {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #073255;
     color: #333;
 }
 
+
+
+.navbar {
+    background-color: #0d64aa;
+    height: 120px;
+}
+
+.nav-home {
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+}
+
+.logo {
+    width: 200px;
+    height: 160px;
+    border-right:transparent;
+    outline: unset;
+}
+
 header {
-    background-color: #4CAF50;
-    color: white;
+    /*Dodger blue color*/
+    background-color: #000;
+    color: #000;
     text-align: center;
     padding: 20px;
 }
